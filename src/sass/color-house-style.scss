@@ -1,0 +1,109 @@
+﻿#house-color {
+  text-align: center;
+
+  h3 {
+    padding: 4% 0 2% 0;
+    color: #CFE19E;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .color-box {
+    padding-top: 5%;
+  }
+
+  .color-panel {
+    float: left;
+
+    .panel {
+      padding: 20px;
+      background-color: #CFE19E;
+      width: 100px;
+      border-radius: 20px;
+
+      .color {
+        width: 60px;
+        height: 60px;
+        padding-top: 7px;
+        border-radius: 12px;
+
+        .shape {
+          padding: 15px;
+          width: 45px;
+          height: 45px;
+          margin: 0 auto;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+
+        .blue {
+          background-color: #83C1CF;
+        }
+
+        .brown {
+          background-color: #B58E5C;
+        }
+
+        .white {
+          background-color: #fff;
+        }
+
+        .red {
+          background-color: #F94B2E;
+        }
+
+        .pink {
+          background-color: #FD93B3;
+        }
+      }
+
+      .active {
+        background-color: #9CBB4A;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #house-color {
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width:992px) {
+    #house-color {
+      .color-box {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  #house-color {
+    .color-panel {
+      float: unset;
+
+      .panel {
+        width: 342px;
+        height: 100px;
+        margin: 0 auto;
+
+        .color {
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:360px) {
+  #house-color .color-panel .panel {
+    width: 190px;
+    height: 140px;
+    padding: 10px 0 10px 0;
+  }
+}

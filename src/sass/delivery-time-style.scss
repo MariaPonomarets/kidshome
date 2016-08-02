@@ -1,0 +1,42 @@
+﻿$delivery-time-color-text: #91987F;
+
+#delivery-time {
+  margin-top: 30px;
+  text-align: center;
+  color: $delivery-time-color-text;
+  margin-bottom:30px;
+      line-height:1.2;
+
+  .icon-delivery-time {
+    padding: 30px;
+
+    img {
+      width: 80%;
+      &:hover{
+        width:85%;
+      }
+    }
+  }
+  // border-bottom:1px solid #CFE19E;
+  h3 {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size:20pt;
+  }
+
+  .description {
+    font-size: 14pt;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+  @media screen and (max-width:768px) {
+    #delivery-time .icon-delivery-time img {
+    width: 50%;
+    &:hover{
+      width:60%;
+    }
+}
+}

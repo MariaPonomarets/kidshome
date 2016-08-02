@@ -1,0 +1,176 @@
+﻿$nav-background-color: #9CBB4A;
+$nav-button-color: #89A739;
+$nav-button-color-active: #FE5F53;
+$nav-main-radius: 20px;
+$nav-heigth: 148px;
+$nav-circle-part: 163px;
+
+.navbar-kids {
+  height: $nav-heigth;
+  width: 100%;
+  background: $nav-background-color;
+  z-index: 1000;
+  position: fixed;
+  color: #fff;
+}
+
+.container-kids {
+  min-height: $nav-circle-part;
+  z-index: 11;
+  background-color: $nav-background-color;
+  border-bottom-left-radius: $nav-main-radius;
+  border-bottom-right-radius: $nav-main-radius;
+}
+
+.container-kids-branding {
+  padding-top: 10px;
+}
+
+.phone-icon {
+  font-size: 26px;
+  padding: 8px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  float: left;
+}
+
+.phone-number {
+  padding-top: 32px;
+  line-height: 12px;
+  font-size: 15pt;
+  float: right;
+}
+
+.number {
+  float: right;
+  padding: 6px 0 6px 8px;
+  font-size:16pt;
+}
+
+.navbar {
+  margin-bottom: unset;
+}
+
+.collapse-menu {
+  text-align: center;
+  color: #fff;
+  font-size: 20pt;
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: nowrap;
+  width: 100%;
+  padding: 12px 10px 10px 10px;
+}
+
+.element-menu {
+  background: $nav-button-color;
+  padding: 4px 6px 4px 6px;
+  border-radius: 18px;
+  font-size: 15pt;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $nav-button-color-active;
+  }
+}
+
+.hide-elem {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    padding: 18px 10px 10px 8px;
+  }
+
+  .element-menu {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-kids {
+    .container {
+      width: 100%;
+    }
+  }
+
+  .element-menu {
+    font-size: 10pt;
+    padding: 4px 3px 4px 3px;
+  }
+
+  .menu {
+    padding: 18px 10px 10px 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-kids {
+    height: auto;
+    text-align: center;
+    height: auto;
+    text-align: center;
+    .brand-kids{
+      img{
+        height:50px;
+      }
+    }
+  
+  }
+
+  .phone-number {
+    float: left;
+    padding-left: 30%;
+  }
+
+  .element-menu {
+    font-size: 14pt;
+  }
+
+  .collapse-menu {
+    display: inherit;
+    padding-bottom: 3px;
+
+    button:hover {
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+  }
+
+  .menu {
+    display: none;
+    padding: 0;
+
+    .collapse-menu {
+      background-color: $nav-button-color;
+    }
+  }
+
+  .element-menu {
+    border-radius: inherit;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 468px) {
+  .navbar-kids {
+    
+  }
+  .phone-number {
+    float: left;
+    padding-left: 20%;
+    padding-top:10px;
+  }
+}

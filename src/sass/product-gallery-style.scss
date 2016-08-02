@@ -1,0 +1,206 @@
+﻿$product-gallery-bacground-color: #CFE19E;
+
+#gellary-product {
+  z-index: 100;
+
+  .gellary-box {
+    margin-top: -3%;
+  }
+
+  .product-container {
+    padding: 0;
+    margin: -38px 0 0 0;
+    width: 100%;
+    min-height: 500px;
+    z-index: 19;
+  }
+
+  .product-box {
+    background-image: url('../img/bg-product-gallery.png');
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // height: 100%;
+    text-align: center;
+    color: #fff;
+
+    .bg-slider {
+      background-image: url('../img/bg-product-gallery.png');
+      background-position-x: center;
+      background-position-y: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 650px;
+
+      .hide-elem {
+        display: none;
+      }
+
+      .small-screen {
+        font-size: 40px;
+
+
+        .small-left {
+          float: left;
+          border: 1px solid #fff;
+          border-radius: 10px;
+          padding: 10px;
+
+          &:hover {
+            border: 2px solid #fff;
+            font-size: 42px;
+          }
+        }
+
+        .small-rigth {
+          float: right;
+          border: 1px solid #fff;
+          border-radius: 10px;
+          padding: 10px;
+
+          &:hover {
+            border: 2px solid #fff;
+            font-size: 42px;
+          }
+        }
+      }
+
+      .left {
+        text-align: right;
+        padding-top: 150px;
+        font-size: 40px;
+
+        span {
+          border: 1px solid #fff;
+          padding: 5px;
+          border-radius: 10px;
+
+          &:hover {
+            border: 2px solid #fff;
+            font-size: 42px;
+          }
+        }
+      }
+
+      .rigth {
+        text-align: left;
+        padding-top: 150px;
+        font-size: 40px;
+
+        span {
+          border: 1px solid #fff;
+          padding: 5px;
+          border-radius: 10px;
+
+          &:hover {
+            border: 2px solid #fff;
+            font-size: 42px;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 20pt;
+      line-height: 1.2;
+      padding: 7% 0 4% 0;
+    }
+
+    .slider-box {
+      overflow: hidden;
+    }
+
+    .slider {
+      position: relative;
+      width: 10000px;
+      height: 210px;
+    }
+
+    .slider {
+      .content-box-product {
+        background-color: #fff;
+        border-radius: 20px;
+        float: left;
+        z-index: 0;
+        width: 300px;
+        margin: 20px;
+
+        .img-box-product {
+          border-bottom: 1px solid #cfe19e;
+
+          .price {
+            float: right;
+            margin-top: -30px;
+            margin-right: 10px;
+            background-color: red;
+            height: 40px;
+            width: 60px;
+            -moz-border-radius: 50% / 100%;
+            -webkit-border-radius: 50% / 100%;
+            border-radius: 50% / 100%;
+            padding-top: 3%;
+          }
+        }
+
+        .description {
+          color: #91987f;
+          padding: 10px;
+        }
+
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1600px) {
+#gellary-product .product-box .bg-slider{
+  height:550px;
+}
+}
+@media screen and (max-width:1200px) {
+#gellary-product .product-box .bg-slider{
+  height:450px;
+}
+}
+
+@media screen and (max-width:768px) {
+  #gellary-product {
+    .product-box .bg-slider{ 
+      height:500px;
+      .small-screen{
+              padding-top:15px;
+font-size:15px;
+  .small-rigth:hover{
+  font-size:18px;
+
+} .small-left:hover{
+  font-size:18px;
+
+}
+      }
+      .hide-elem{
+      display:block;
+    }}
+    .product-container {
+      p {
+        padding: 12% 0 8% 0;
+      }
+    }
+  }
+
+  .product-box .bg-slider {
+    .left {
+      display: none;
+    }
+
+    .rigth {
+      display: none;
+    }
+  }
+}

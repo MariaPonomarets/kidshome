@@ -1,0 +1,39 @@
+﻿.bunner-section {
+  z-index:-1;
+  margin:0;
+  padding: 144px 0 0 0;
+  background-image: url('../img/header-grass.png');
+  background-size: cover;
+  overflow:hidden;
+  position:relative;
+  .slider-box {
+    margin-top: -17px;
+    width: 1250px;
+    padding:0;
+  }
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .bunner-section {
+    .slider-box {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .bunner-section {
+    padding-top: 185px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .bunner-section {
+    padding-top: 160px;
+}
+}
